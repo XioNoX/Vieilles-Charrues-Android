@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Vieilles Charrues 2010</string>
+    
+    <string name="bientotDisponible">Bientôt disponible.\nN\'oublie pas de mettre à jour l\'appli avant le festival !</string>
+    
+    <string name="actualiser">Actualiser</string>
+    <string name="action">Action</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="partager">Partager</string>
+    
+    <string name="miseAJour">Mise à jour</string>
+    <string name="miseAJourTermine">Terminé</string>
+    <string name="miseAJourErreur">Erreur</string>
+    
+    <string name="positionIndeterminee">Position indéterminée</string>
+    <string name="horsSite">Hors site</string>
+    <string name="precision">Précision : </string>
+    <string name="metres"> mètres</string>
+   
+    <!-- Activité news -->
+    <string name="menuPartagerCetteNews">Partager cette news</string>
+    
+    <!-- Activité artiste -->
+    <string name="artistePartagerCetArtiste">Partager cet artiste</string>
+   
+    <!-- Activité menu -->
+    <string name="menuAPropos">A propos</string>
+    <string name="menuPartenaires">Partenaires</string>
+ 
+    <!-- Activité favoris -->
+    <string name="favorisMessageAjoutConcert">Ajoute un "concert" en favoris en appuyant sur l\'étoile correspondante.</string>
+    <string name="favorisMessageAlerteConcert">Tu peux être averti du début des concerts en allant dans les préférences (touche Menu).</string>
+	<string name="favorisPreferences">Préférences</string>
+	
+	<!-- Activité plan -->
+	<string name="planCarte1">Carte 1</string>
+	<string name="planCarte2">Carte 2</string>
+
+	<!-- Activité tente -->
+	<string name="tenteAjout">Ajouter une tente</string>
+	<string name="tenteMessageAjout">Ajoute une "tente" en appuyant sur la touche menu.</string>
+	<string name="tenteMessageRetrouve">Retrouve tes tentes sur la carte ou clic longtemps sur une tente pour la supprimer.</string>
+	<string name="tenteOubliNom">Oups, il manque le nom de la tente</string>
+	<string name="tenteAjoutee">Tente ajoutée</string>
+	<string name="tenteLatitude">Latitude : </string>
+	<string name="tenteLongitude">Longitude : </string>
+	
+</resources>

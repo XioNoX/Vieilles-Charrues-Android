@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ * This file is part of Vieilles Charrues 2010.
+ *
+ * Vieilles Charrues 2010 is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Vieilles Charrues 2010 is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Vieilles Charrues 2010.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ -->
+
+<LinearLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/backgroung_carte">
+
+	<RelativeLayout android:id="@+id/rlInfos"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+		<fr.asso.vieillescharrues.carte.DoubleScroll
+			android:id="@+id/plan2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<RelativeLayout android:id="@+id/rlPlan"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+				<ImageView android:id="@+id/ivPlan" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" />
+
+			</RelativeLayout>
+
+		</fr.asso.vieillescharrues.carte.DoubleScroll>
+
+		<LinearLayout android:id="@+id/llInfos"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:gravity="center_vertical" android:minWidth="250dp"
+			android:padding="3dp" android:background="@drawable/carte_fond_infos">
+
+			<Button android:id="@+id/btnCarte1" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Carte 1"
+				android:background="#ffffff" android:layout_margin="2dp" />
+
+			<Button android:id="@+id/btnCarte2" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="Carte 2"
+				android:background="#ffffff" android:layout_margin="2dp" />
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/tvPrecision"
+				android:layout_marginRight="5dp" android:text="Précision : "
+				android:textColor="#ffffff" android:layout_marginLeft="5dp" />
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+	<ImageView android:id="@+id/ivPoint" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>

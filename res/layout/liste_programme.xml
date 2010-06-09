@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ * This file is part of Vieilles Charrues 2010.
+ *
+ * Vieilles Charrues 2010 is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Vieilles Charrues 2010 is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Vieilles Charrues 2010.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="#f3ebcd"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+	<ImageView android:id="@+id/ivHeader" android:layout_height="wrap_content"
+		android:background="@drawable/header" android:layout_gravity="top|center_horizontal"
+		android:layout_width="fill_parent" android:scaleType="center" />
+
+	<ListView android:id="@+id/android:list" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:background="#f3ebcd"
+		android:cacheColorHint="#f3ebcd" android:layout_weight="1"
+		android:textFilterEnabled="true" android:smoothScrollbar="true" />
+
+	<LinearLayout android:id="@+id/llBoutonsProgramme"
+		android:layout_weight="0" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:gravity="center_vertical">
+
+		<Button android:text="Jeu." android:id="@+id/btnJeudi"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+		<Button android:text="Vend." android:id="@+id/btnVendredi"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+		<Button android:text="Sam." android:id="@+id/btnSamedi"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+		<Button android:text="Dim." android:id="@+id/btnDimanche"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+		<Button android:text="Artistes" android:id="@+id/btnArtistes"
+			android:layout_height="wrap_content" android:layout_gravity="right"
+			android:layout_width="wrap_content" />
+
+	</LinearLayout>
+
+</LinearLayout>

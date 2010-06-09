@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ * This file is part of Vieilles Charrues 2010.
+ *
+ * Vieilles Charrues 2010 is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Vieilles Charrues 2010 is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Vieilles Charrues 2010.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="#f3ebcd"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+	<ImageView android:id="@+id/ivHeader" android:layout_height="wrap_content"
+		android:background="@drawable/header" android:layout_gravity="top|center_horizontal"
+		android:layout_width="fill_parent" android:scaleType="center" />
+
+	<ScrollView android:id="@+id/svPartenaires"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_weight="50">
+
+		<LinearLayout android:id="@+id/llPartenairesGlobal"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_weight="1" android:orientation="vertical">
+
+			<TextView android:text="Parrains officiels" android:id="@+id/tvParrainsOfficiels"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="#000000" android:textSize="18dp"  android:background="#EFF0F0"
+				android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"></TextView>
+
+			<Gallery android:id="@+id/gParrainsOfficiels"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:spacing="16dp"
+				android:background="#ffffff" android:paddingTop="5dp"
+				android:paddingBottom="5dp"></Gallery>
+
+			<TextView android:text="Partenaires officiels" android:id="@+id/tvParrainsOfficiels"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="#000000" android:textSize="18dp"  android:background="#EFF0F0"
+				android:layout_gravity="center_horizontal" ></TextView>
+
+			<Gallery android:id="@+id/gPartenairesOfficiels"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:spacing="16dp"
+				android:background="#ffffff" android:paddingTop="5dp"
+				android:paddingBottom="5dp"></Gallery>
+
+			<TextView android:text="Partenaires" android:id="@+id/tvParrainsOfficiels"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="#000000" android:textSize="18dp"  android:background="#EFF0F0"
+				android:layout_gravity="center_horizontal"></TextView>
+
+			<Gallery android:id="@+id/gPartenaires" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:spacing="16dp"
+				android:background="#ffffff"
+				android:paddingTop="5dp" android:paddingBottom="5dp" />
+				
+			<TextView android:text="Partenaires médias" android:id="@+id/tvPartenairesMedias"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:textColor="#000000" android:textSize="18dp"  android:background="#EFF0F0"
+				android:layout_gravity="center_horizontal"></TextView>
+
+			<Gallery android:id="@+id/gPartenairesMedias" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:spacing="16dp"
+				android:background="#ffffff"
+				android:paddingTop="5dp" android:paddingBottom="5dp" />
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

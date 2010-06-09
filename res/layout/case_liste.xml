@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ * This file is part of Vieilles Charrues 2010.
+ *
+ * Vieilles Charrues 2010 is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Vieilles Charrues 2010 is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Vieilles Charrues 2010.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="horizontal"
+	android:layout_height="wrap_content" android:paddingBottom="5dp"
+	android:paddingTop="5dp">
+
+	<fr.asso.vieillescharrues.programme.FavoriteButton
+		android:id="@+id/favoriteButton" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_alignParentRight="true"
+		android:paddingTop="10dip" android:paddingRight="10dip" />
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/llInfos" android:layout_gravity="center_vertical"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_weight="1">
+
+		<TextView android:text="@+id/tvTitre" android:id="@+id/tvTitre"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#000000" android:textSize="16dp" />
+
+		<TextView android:text="@+id/tvDescription" android:id="@+id/tvDescription"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:textColor="#000000" android:gravity="right" />
+
+	</LinearLayout>
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/llFleche" android:gravity="right"
+		android:layout_gravity="center_vertical" android:layout_weight="0"
+		android:layout_width="wrap_content">
+
+		<ImageView android:id="@+id/ivFleche" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:scaleType="center"
+			android:layout_gravity="center_vertical" android:background="@drawable/arrow40" />
+
+	</LinearLayout>
+
+</LinearLayout>

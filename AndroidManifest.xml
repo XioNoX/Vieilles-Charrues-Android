@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="fr.asso.vieillescharrues" android:versionCode="1"
+	android:versionName="1.0" >
+	<uses-sdk android:minSdkVersion="3" /> 
+	<application android:label="@string/app_name" android:icon="@drawable/icon"
+		android:theme="@android:style/Theme.NoTitleBar">
+		<activity android:label="@string/app_name" android:name=".main.Main"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".main.Menu"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".news.News"></activity>
+		<activity android:name=".news.UneNews" android:configChanges="orientation|keyboardHidden"></activity>
+		<activity android:name=".programme.Programme"></activity>
+		<activity android:name=".programme.Favoris"></activity>
+		<activity android:name=".programme.UnArtiste"
+			android:configChanges="orientation|keyboardHidden"></activity>
+		<activity android:name=".divers.Infos"></activity>
+		<activity android:name=".divers.Partenaires"></activity>
+		<activity android:name=".carte.Plan"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:screenOrientation="landscape"></activity>
+		<!--
+			<activity android:name=".carte.Plan"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		-->
+		<activity android:name=".tente.Tentes"></activity>
+		<activity android:name=".tente.AjoutTente"></activity>
+		<activity android:name=".programme.Preferences"></activity>
+		<receiver android:name=".programme.NotificationReceiver"
+			android:process=":remote">
+			<intent-filter>
+				<action android:name="fr.asso.vieillescharrues.action.tous_favoris"></action>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="fr.asso.vieillescharrues.action.modif_favoris"></action>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="fr.asso.vieillescharrues.action.alarme_sonne"></action>
+				<data android:scheme="concert"></data>
+			</intent-filter>
+		</receiver>
+	</application>
+
+
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+
+	<uses-permission android:name="android.permission.ACCESS_GPS"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS"></uses-permission>
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+</manifest> 

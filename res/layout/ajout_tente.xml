@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+ * This file is part of Vieilles Charrues 2010.
+ *
+ * Vieilles Charrues 2010 is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Vieilles Charrues 2010 is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Vieilles Charrues 2010.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="#f3ebcd"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+	<ImageView android:id="@+id/ivHeader" android:layout_height="wrap_content"
+		android:background="@drawable/header" android:layout_gravity="top|center_horizontal"
+		android:layout_width="fill_parent" android:scaleType="center"/>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:gravity="center_horizontal"
+		android:layout_marginLeft="5dp" android:layout_marginRight="5dp"
+		android:id="@+id/llNomTente" android:layout_height="wrap_content"
+		android:layout_marginTop="5dp">
+
+		<TextView android:id="@+id/nomTente" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Nom de la tente"
+			android:textColor="#000000" android:textSize="18dp"
+			android:layout_marginBottom="0dp" />
+
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/etTente"
+			android:inputType="text" android:layout_marginTop="10dp" />
+
+	</LinearLayout>
+
+	<ScrollView android:id="@+id/svInfos"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:layout_width="fill_parent">
+
+		<LinearLayout android:id="@+id/llInfos"
+			android:layout_width="wrap_content" android:orientation="vertical"
+			android:layout_marginLeft="10dp" android:layout_weight="1"
+			android:layout_height="fill_parent">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="18dp"
+				android:text="Latitude" android:id="@+id/tvLatitude"
+				android:textColor="#000000" />
+				
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="18dp"
+				android:text="Longitude" android:id="@+id/tvLongitude"
+				android:layout_marginTop="5dp" android:textColor="#000000" />
+				
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textSize="18dp"
+				android:text="Précision" android:id="@+id/tvPrecision"
+				android:layout_marginTop="5dp" android:textColor="#000000" />
+
+		</LinearLayout>
+		
+	</ScrollView>
+
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="0"
+		android:id="@+id/btnAjoutTente" android:text="Ajouter cette tente"
+		android:layout_gravity="bottom|center_horizontal"
+		android:layout_marginTop="5dp" />
+
+</LinearLayout>
