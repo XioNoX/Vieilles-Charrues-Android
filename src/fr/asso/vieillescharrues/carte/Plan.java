@@ -248,14 +248,14 @@ public class Plan extends Activity implements LocationListener {
 			btnCarte1.setEnabled(false);
 			btnCarte2.setEnabled(true);
 
-			this.ivPlan.setImageDrawable(getResources().getDrawable(R.drawable.carte_polytech_paysage));
+			this.ivPlan.setImageDrawable(getResources().getDrawable(R.drawable.carte_interieure));
 
-			this.carteHeight = getResources().getDrawable(R.drawable.carte_polytech_paysage).getIntrinsicHeight();
-			this.carteWidth = getResources().getDrawable(R.drawable.carte_polytech_paysage).getIntrinsicWidth();
+			this.carteHeight = getResources().getDrawable(R.drawable.carte_interieure).getIntrinsicHeight();
+			this.carteWidth = getResources().getDrawable(R.drawable.carte_interieure).getIntrinsicWidth();
 
-			hautGauche = new PointF((float)-1.51885, (float)47.283552); 
-			hautDroite = new PointF((float)-1.51239, (float)47.283567);  
-			basGauche = new PointF((float)-1.51886 , (float)47.280910); 
+			hautGauche = new PointF((float)-3.56218, (float)48.273008); 
+			hautDroite = new PointF((float)-3.55296, (float)48.273000);  
+			basGauche = new PointF((float)-3.56219 , (float)48.267620); 
 		}
 		else if (carte == 2)
 		{

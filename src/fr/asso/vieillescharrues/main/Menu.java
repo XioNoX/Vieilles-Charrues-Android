@@ -33,11 +33,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import fr.asso.vieillescharrues.R;
+import fr.asso.vieillescharrues.carte.Plan;
 import fr.asso.vieillescharrues.divers.Infos;
 import fr.asso.vieillescharrues.divers.Partenaires;
 import fr.asso.vieillescharrues.news.News;
 import fr.asso.vieillescharrues.programme.Favoris;
 import fr.asso.vieillescharrues.programme.Programme;
+import fr.asso.vieillescharrues.tente.Tentes;
 
 /**
  * Classe gérant l'activité affichant le menu principal (sous forme d'icones)
@@ -51,7 +53,7 @@ public class Menu extends Activity{
 	private static final Integer[] MENU_ICONES = {
 		R.drawable.menu_news, R.drawable.menu_infos,
 		R.drawable.menu_prog, R.drawable.menu_favoris,
-		R.drawable.menu_carte_grise, R.drawable.menu_tente_grise
+		R.drawable.menu_carte, R.drawable.menu_tente
 	};
 
 	/**
@@ -94,12 +96,12 @@ public class Menu extends Activity{
 					i = new Intent(Menu.this, Favoris.class);
 					break;
 				case 4: //Plan
-					//i = new Intent(Menu.this, Plan.class);
-					Toast.makeText(getApplicationContext(), getString(R.string.bientotDisponible), Toast.LENGTH_LONG).show();
+					i = new Intent(Menu.this, Plan.class);
+//					Toast.makeText(getApplicationContext(), getString(R.string.bientotDisponible), Toast.LENGTH_LONG).show();
 					break;
 				case 5: //Tente
-					//i = new Intent(Menu.this, Tentes.class);
-					Toast.makeText(getApplicationContext(), getString(R.string.bientotDisponible), Toast.LENGTH_LONG).show();
+					i = new Intent(Menu.this, Tentes.class);
+//					Toast.makeText(getApplicationContext(), getString(R.string.bientotDisponible), Toast.LENGTH_LONG).show();
 					break;
 				}
 				if (i!=null) startActivity(i);
