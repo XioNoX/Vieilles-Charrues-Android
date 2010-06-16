@@ -223,7 +223,6 @@ public class Plan extends Activity implements LocationListener {
 	 * @return Point contenant la position en x et en y sur le plan
 	 */
 	private PointF gpsToPointPlan(Location location){
-
 		//Formule pour le calcul de la position
 		float x = (float) ((location.getLongitude() - hautGauche.x)/(hautDroite.x-hautGauche.x)*carteWidth);
 		float y = (float) ((hautGauche.y - location.getLatitude())/(hautGauche.y-basGauche.y))*carteHeight; 
@@ -253,9 +252,12 @@ public class Plan extends Activity implements LocationListener {
 			this.carteHeight = getResources().getDrawable(R.drawable.carte_interieure).getIntrinsicHeight();
 			this.carteWidth = getResources().getDrawable(R.drawable.carte_interieure).getIntrinsicWidth();
 
-			hautGauche = new PointF((float)-3.56218, (float)48.273008); 
-			hautDroite = new PointF((float)-3.55296, (float)48.273000);  
-			basGauche = new PointF((float)-3.56219 , (float)48.267620); 
+			hautGauche = new PointF((float)-3.562216, (float)48.273048);
+			hautDroite = new PointF((float)-3.55303, (float)48.273074);
+			basGauche = new PointF((float)-3.562189, (float)48.267600);
+//	         hautDroite = new PointF((float)-3.562216, (float)48.273048);
+//	            hautGauche = new PointF((float)-3.562189, (float)48.267600);
+//			basGauche = new PointF((float) -3.553021, (float) 48.267570);
 		}
 		else if (carte == 2)
 		{
@@ -371,6 +373,8 @@ public class Plan extends Activity implements LocationListener {
 	 */
 	private boolean dansCarte(Location location)
 	{
+	       Log.d("GPS", "Longitude : " + location.getLongitude());
+	        Log.d("GPS", "Latitude : " + location.getLatitude());
 		if(location.getLongitude() > hautGauche.x && location.getLongitude() < hautDroite.x && location.getLatitude() < hautGauche.y && location.getLatitude() > basGauche.y) 
 			return true;
 		else

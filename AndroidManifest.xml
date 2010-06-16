@@ -24,8 +24,7 @@
 		<activity android:name=".divers.Infos"></activity>
 		<activity android:name=".divers.Partenaires"></activity>
 		<activity android:name=".carte.Plan"
-			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-			android:screenOrientation="landscape"></activity>
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
 		<!--
 			<activity android:name=".carte.Plan"
 			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
@@ -56,4 +55,5 @@
 	<uses-permission android:name="android.permission.ACCESS_GPS"></uses-permission>
 	<uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS"></uses-permission>
 	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"></uses-permission>
 </manifest> 
