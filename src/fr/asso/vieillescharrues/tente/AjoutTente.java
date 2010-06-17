@@ -44,10 +44,10 @@ public class AjoutTente extends Activity implements LocationListener {
 
 	private LocationManager myManager;
 	Location currentLocation;
-
-	PointF hautGauche = new PointF((float)-1.53187, (float)47.28887); 
-	PointF hautDroite = new PointF((float)-1.50153, (float)47.28866);  
-	PointF basGauche = new PointF((float)-1.53187 , (float)47.27507); 
+	
+	PointF hautGauche = new PointF((float)-3.5924, (float)48.29378); 
+	PointF hautDroite = new PointF((float)-3.5350, (float)48.29372);  
+	PointF basGauche = new PointF((float)-3.5925, (float)48.25630); 
 
 	Tente tente;
 

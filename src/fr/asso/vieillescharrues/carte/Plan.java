@@ -224,9 +224,10 @@ public class Plan extends Activity implements LocationListener {
 	 */
 	private PointF gpsToPointPlan(Location location){
 		//Formule pour le calcul de la position
-		float x = (float) ((location.getLongitude() - hautGauche.x)/(hautDroite.x-hautGauche.x)*carteWidth);
-		float y = (float) ((hautGauche.y - location.getLatitude())/(hautGauche.y-basGauche.y))*carteHeight; 
-
+		
+			float x = (float) (1-(hautGauche.y - location.getLatitude())/(hautGauche.y-basGauche.y))*carteWidth; 
+			float y = (float) ((location.getLongitude() - hautGauche.x)/(hautDroite.x-hautGauche.x)*carteHeight);
+		
 		return new PointF(x, y);
 	}
 
@@ -252,26 +253,23 @@ public class Plan extends Activity implements LocationListener {
 			this.carteHeight = getResources().getDrawable(R.drawable.carte_interieure).getIntrinsicHeight();
 			this.carteWidth = getResources().getDrawable(R.drawable.carte_interieure).getIntrinsicWidth();
 
-			hautGauche = new PointF((float)-3.562216, (float)48.273048);
-			hautDroite = new PointF((float)-3.55303, (float)48.273074);
-			basGauche = new PointF((float)-3.562189, (float)48.267600);
-//	         hautDroite = new PointF((float)-3.562216, (float)48.273048);
-//	            hautGauche = new PointF((float)-3.562189, (float)48.267600);
-//			basGauche = new PointF((float) -3.553021, (float) 48.267570);
+			hautGauche = new PointF((float)-3.56224, (float)48.27303);
+			hautDroite = new PointF((float)-3.55301, (float)48.27306);
+			basGauche = new PointF((float)-3.56220, (float)48.26758);
 		}
 		else if (carte == 2)
 		{
 			btnCarte1.setEnabled(true);
 			btnCarte2.setEnabled(false);
 
-			this.ivPlan.setImageDrawable(getResources().getDrawable(R.drawable.carte_polytech_paysage_2));
+			this.ivPlan.setImageDrawable(getResources().getDrawable(R.drawable.carte_exterieure));
 
-			this.carteHeight = getResources().getDrawable(R.drawable.carte_polytech_paysage_2).getIntrinsicHeight();
-			this.carteWidth = getResources().getDrawable(R.drawable.carte_polytech_paysage_2).getIntrinsicWidth();
+			this.carteHeight = getResources().getDrawable(R.drawable.carte_exterieure).getIntrinsicHeight();
+			this.carteWidth = getResources().getDrawable(R.drawable.carte_exterieure).getIntrinsicWidth();
 
-			hautGauche = new PointF((float)-1.53187, (float)47.28887); 
-			hautDroite = new PointF((float)-1.50153, (float)47.28866);  
-			basGauche = new PointF((float)-1.53187 , (float)47.27507); 
+			hautGauche = new PointF((float)-3.5924, (float)48.29378); 
+			hautDroite = new PointF((float)-3.5350, (float)48.29372);  
+			basGauche = new PointF((float)-3.5925, (float)48.25630); 
 		}
 		//Affichage de la position GPS
 		affichagePosition(location);
