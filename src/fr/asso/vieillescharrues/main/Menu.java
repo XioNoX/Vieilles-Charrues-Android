@@ -129,13 +129,16 @@ public class Menu extends Activity{
 		
 		TextView tvAbout = new TextView(this);
 		tvAbout.setPadding(5, 0, 0, 0);
-
+		// TODO : Mettre dans le fichier string
 		tvAbout.setText( Html.fromHtml("<center>" +
 				"Projet Open Source réalisé par :<br/>" +
 				"Julien Vermet <a href=\"mailto:ju.vermet@gmail.com\">ju.vermet@gmail.com</a><br/>" +
 				"Arzhel Younsi <a href=\"mailto:xionox@gmail.com\">xionox@gmail.com</a><br/>" +
 				"étudiants à Polytech'Nantes<br/><br/>" +
-				"Sources disponibles à l'adresse :<br/>" +
+				"Cartes réalisées par :<br/>" +
+                "Justine Moal <a href=\"mailto:justine.moal@gmail.com\">justine.moal@gmail.com</a><br/>" +
+                "Nicolas Matelot <a href=\"mailto:matelotnicolas@gmail.com\">matelotnicolas@gmail.com</a><br/>" +
+				"<br/>Sources disponibles à l'adresse :<br/>" +
 				"<a href=\"http://code.google.com/p/vieillescharrues/\">http://code.google.com/p/vieillescharrues/</a>" +
 				"</center>"));
 		tvAbout.setMovementMethod(LinkMovementMethod.getInstance());
