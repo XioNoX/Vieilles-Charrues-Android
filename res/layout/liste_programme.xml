@@ -29,7 +29,8 @@
 	<ListView android:id="@+id/android:list" android:layout_width="fill_parent"
 		android:layout_height="fill_parent" android:background="#f3ebcd"
 		android:cacheColorHint="#f3ebcd" android:layout_weight="1"
-		android:textFilterEnabled="true" android:smoothScrollbar="true" />
+		android:textFilterEnabled="true" android:smoothScrollbar="true" 
+		android:dividerHeight="0px" android:divider="#f3ebcd" />
 
 	<LinearLayout android:id="@+id/llBoutonsProgramme"
 		android:layout_weight="0" android:layout_height="wrap_content"
