@@ -356,7 +356,7 @@ public class DB {
 		try {
 			open();
 			Cursor c = db.query(TABLE_CONCERTS, new String[] {"concertID", "heureDebut", "heureFin", "idArtiste", "idScene", "idJour", "favoris"},
-					"idJour="+jour, null, null, null, "idScene");
+					"idJour="+jour, null, null, null, "idScene, heureDebut");
 			int numRows = c.getCount();
 			c.moveToFirst();
 			for (int i = 0; i < numRows; ++i) {

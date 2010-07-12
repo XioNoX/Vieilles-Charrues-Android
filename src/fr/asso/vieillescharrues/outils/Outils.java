@@ -25,6 +25,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.StringTokenizer;
 
 import android.content.Context;
 import android.util.Log;
@@ -95,12 +96,20 @@ public class Outils {
 		String date = "";
 		SimpleDateFormat sdfDateConcert = new SimpleDateFormat("yyyy-MM-dd hh':'mm" );       
 
+		StringTokenizer st = new StringTokenizer(heure, ":");
+		int h = Integer.parseInt( st.nextToken() );
+		if ( h >=0 && h <= 6)
+		{
+			idJour++;
+		}
+		
 		switch(idJour)
 		{
 		case 1: date = "2010-07-15 "; break;
 		case 2: date = "2010-07-16 "; break;
 		case 3: date = "2010-07-17 "; break;
 		case 4: date = "2010-07-18 "; break;
+		case 5: date = "2010-07-19 "; break;
 		}
 		date += heure;
 		try {
